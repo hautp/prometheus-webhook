@@ -1,0 +1,20 @@
+{
+    "@type": "MessageCard",
+    "@context": "http://schema.org/extensions",
+    "summary": "Alert from Prometheus",
+    "themeColor": "{{ color }}",
+    "sections": [{
+        "activityTitle": "{{ title }}",
+        "facts": [{
+            "name": "Hostname",
+            "value": "{{ instance_name }}"
+        }, {
+            "name": "Service",
+            "value": "{{ alert_name }}"
+        }, {
+            "name": "Status",
+            "value": "{{ status }}"
+        }],
+        "text": "<b>Description</b>: {{ desc }}</ul>"
+        }]
+}

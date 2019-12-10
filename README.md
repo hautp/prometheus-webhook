@@ -1,6 +1,10 @@
 # Prometheus webhook
+## Introduction
+> Note: This project is using python v3.6.9
+v1. Prometheus webhook only support for send messages notify to Microsoft Teams channel.
 
-## Run app with WSGI
+##Installation 
+### Run app with WSGI
 1. Clone repository
 ```bash
 git clone https://github.com/hautp/prometheus-webhook.git
@@ -17,7 +21,7 @@ pip install -r requirements.txt
 gunicorn -c app_config.py webhook:app
 ```
 
-## Run app with Docker
+### Run app with Docker
 1. Clone repository
 ```bash
 git clone https://github.com/hautp/prometheus-webhook.git
@@ -33,4 +37,3 @@ docker build -t "prometheus-webhook" .
 ```bash
 docker run -it -d --name "prome-webhook" -p 5000:5000 prometheus-webhook
 ```
-

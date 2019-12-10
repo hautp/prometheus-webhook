@@ -1,5 +1,11 @@
+# Python extensions
 __pycache__/
 *.py[cod]
+
+# Env folders
 env/
 dev/
+
+# Log files
+*.log
 *.swp
