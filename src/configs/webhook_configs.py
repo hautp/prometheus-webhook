@@ -1,5 +1,6 @@
 # Teams connectors
-teams_connectors = {'<channel-name>': '<microsoft-teams-webhook>' }
+teams_connectors = {'<channel-name>': '<microsoft-teams-webhook>', \
+                'default': '<default-teams-webhook>' }
 
 # Proxies
 proxies = { 'http': '<internal-proxy>', \
